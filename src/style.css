@@ -1,0 +1,77 @@
+/*https://www.wix.com/website-template/view/html/2312?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fpersonal%2F3&tpClick=view_button&esi=dcb5e32d-6d8a-4454-9633-822127b5dd04*/
+:root{
+    --primary:#015761;
+    --second:#f7dc4f;
+    --third:#f9fafa;
+    --fourth:#f1f0f0;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(max-width:680px){
+    body{
+        background:var(--primary);
+    }
+    .main-header-container{
+        background-color: var(--primary);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    .name-humbergur{
+        background:var(--primary);
+        display:grid;
+        grid-template-columns: 80% 10%;
+        column-gap: 10%;
+        margin:15px;
+        margin-right:10px;
+    }
+    .name-humbergur h1{
+        font-size: 20px;
+        font-weight: normal;
+        color:var(--second);
+    }
+    .name-humbergur button{
+        background:var(--primary);
+        width:30px;
+        height:25px;
+        display:grid;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+        border:none;
+        outline:none;
+    }
+    .name-humbergur button span{
+        background:var(--fourth);
+    }
+    .image-icons{
+        background:var(--second);
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:0 10px;
+        text-align: center;
+    }
+    .hey-name{
+        background:var(--primary);
+        margin: 25px 10px;
+        height:40vh;
+    }
+    .hey-name .hey-h1{
+        font-size: 30px;
+        font-weight: 500;  
+        color:var(--second);
+    }
+    .hey-name .name-h1{
+        font-size: 30px;
+        padding:10px 0px;  
+        color:var(--fourth);
+    }
+    .hey-name .hey-p{
+        font-size: 17px;
+        color:var(--third);
+    }
+
+}
