@@ -57,7 +57,8 @@
     .hey-name{
         background:var(--primary);
         margin: 25px 10px;
-        height:40vh;
+        height:30vh;
+        justify-self: center;
     }
     .hey-name .hey-h1{
         font-size: 30px;
@@ -73,5 +74,96 @@
         font-size: 17px;
         color:var(--third);
     }
-
+    .main-about-container,
+    .main-show-container,
+    .main-image-container
+    {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        text-align: center;
+        background:var(--fourth);
+    }
+    .about-image img,.show-image img{
+        width:100%;
+    }
+ 
+    .about-content,
+    .show-content,
+    .image-content
+    {
+        display:block;
+    }
+    .about-content h1,
+    .show-content h1,
+    .image-content h1
+    {
+        font-size: 27px;
+        font-weight:600;
+        padding:30px;  
+        color:var(--primary);   
+    }
+    .about-content p{
+        padding:10px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .about-content button{
+        width:70%;
+        margin:auto;
+        height:50px;
+        margin:40px;
+        border:none;
+        outline: none;
+        background:var(--second);
+        color:var(--primary);
+    }
+    .image-image{
+         display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
+    .image-image img{
+       
+        text-align: center;
+        width:300px;
+        height:300px;
+        margin:10px auto;
+        
+    }
+    .main-contact-container{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        text-align: center;
+        margin-bottom: 50px;
+    } 
+      .contact-image img{
+        width:90%;
+        margin:auto;
+        margin-top:30px;
+    }
+    .contact-image-icons{
+        background:var(--primary);
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:0 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contact-content {
+        display: block;
+        line-height: 40px;
+        color:var(--third);
+    }
+    .contact-content h1{
+        font-size: 27px;
+        font-weight:600;
+        padding:30px;  
+        color:var(--second);
+    }
+    .contact-content h3{
+        font-size: 17px;
+        font-weight:600;  
+    }
 }
